@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "hedge-lens"
+version = "0.1.0"
+description = "Extract and store hedge fund letter data using Claude"
+requires-python = ">=3.11"
+dependencies = [
+    "pdfplumber>=0.11",
+    "anthropic>=0.40",
+    "click>=8.1",
+]
+
+[project.scripts]
+hedge-lens = "hedge_lens.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

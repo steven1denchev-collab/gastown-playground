@@ -1,0 +1,31 @@
+# Downloaded PDFs
+letters/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Database
+*.db
+*.sqlite
+
+# Environment / secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# pytest
+.pytest_cache/
